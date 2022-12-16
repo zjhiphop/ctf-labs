@@ -1,0 +1,13 @@
+version: "3.2"
+
+services:
+  converter:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-crypto-padding:latest
+    ports:
+      - 80:1234
+
+# 题目Flag
+# n1book{c18e76558cb0fdb93746c1c331500eac}
+
+# Writeup
+# 关注Nu1L Team公众号，回复3-web-wp-6获取WP

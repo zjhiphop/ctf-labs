@@ -1,0 +1,19 @@
+version: '3.2'
+
+services:
+  mysql:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-logic-mysql:latest
+    environment:
+      -  MYSQL_ROOT_PASSWORD=Cy4Qndv95KKrZCT1
+  web:
+    image: registry.cn-hangzhou.aliyuncs.com/n1book/web-logic-web:latest
+    ports:
+      - 80:80
+    links:
+      - mysql
+
+# 题目Flag
+# FLAG{you_can_got_it}
+
+# Writeup
+# 关注Nu1L Team公众号，回复3-web-wp-4获取WP
